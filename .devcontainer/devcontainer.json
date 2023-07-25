@@ -1,1 +1,18 @@
-{"image":"mcr.microsoft.com/devcontainers/universal:2"}
+{
+  "name": "My Dev Container",
+  "build": {
+      "dockerfile": "Dockerfile"
+  },
+  "customizations/vscode/extensions": [
+      "dbaeumer.vscode-eslint", // Include any extensions you want to have installed
+      "streetsidesoftware.code-spell-checker",
+      "christian-kohler.npm-intellisense",
+      "DavidAnson.vscode-markdownlint",
+      "ms-azuretools.vscode-docker"
+  ],
+  "forwardPorts": [
+      3000
+  ],
+  "workspaceMount": "source=${localWorkspaceFolder},target=/wow-classic-hardcore-character-generator,type=bind",
+  "workspaceFolder": "/wow-classic-hardcore-character-generator"
+}
