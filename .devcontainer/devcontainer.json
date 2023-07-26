@@ -1,0 +1,24 @@
+{
+    "name": "My Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "forwardPorts": [
+        3000
+    ],
+    "workspaceMount": "source=${localWorkspaceFolder},target=/wow-classic-hardcore-character-generator,type=bind",
+    "workspaceFolder": "/wow-classic-hardcore-character-generator",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+				"dbaeumer.vscode-eslint",
+				"streetsidesoftware.code-spell-checker",
+				"christian-kohler.npm-intellisense",
+				"DavidAnson.vscode-markdownlint",
+				"ms-azuretools.vscode-docker",
+				"GitHub.vscode-pull-request-github",
+				"eamodio.gitlens"
+			]
+        }
+    }
+}
