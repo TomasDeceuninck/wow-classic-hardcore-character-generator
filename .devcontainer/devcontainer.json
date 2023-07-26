@@ -17,7 +17,8 @@
 				"DavidAnson.vscode-markdownlint",
 				"ms-azuretools.vscode-docker",
 				"GitHub.vscode-pull-request-github",
-				"eamodio.gitlens"
+				"eamodio.gitlens",
+				"github.vscode-github-actions"
 			]
         }
     }
