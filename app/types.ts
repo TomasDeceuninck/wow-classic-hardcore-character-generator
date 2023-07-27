@@ -1,11 +1,3 @@
-export type WoWCharacter = {
-    "Name": string;
-    "Gender"?: WoWGender;
-    "Race"?: WoWRace;
-    "Class"?: WoWClass;
-    "Specialization"?: WoWClassSpecialization;
-}
-
 export type WoWGender = {
     "Name": string;
     "IconUri": string;
