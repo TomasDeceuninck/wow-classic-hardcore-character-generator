@@ -2,6 +2,7 @@
     {
         "Name":"Dwarves",
         "Unit":"Dwarf",
+        "IconUri": "",
         "Faction":"Alliance",
         "AvailableClasses":[
             "Hunter",
@@ -14,6 +15,7 @@
     {
         "Name":"Gnomes",
         "Unit":"Gnome",
+        "IconUri": "",
         "Faction":"Alliance",
         "AvailableClasses":[
             "Mage",
@@ -25,6 +27,7 @@
     {
         "Name":"Humans",
         "Unit":"Human",
+        "IconUri": "",
         "Faction":"Alliance",
         "AvailableClasses":[
             "Mage",
@@ -38,6 +41,7 @@
     {
         "Name":"Night Elves",
         "Unit":"Night Elf",
+        "IconUri": "",
         "Faction":"Alliance",
         "AvailableClasses":[
             "Druid",
@@ -50,6 +54,7 @@
     {
         "Name":"Orcs",
         "Unit":"Orc",
+        "IconUri": "",
         "Faction":"Horde",
         "AvailableClasses":[
             "Hunter",
@@ -62,6 +67,7 @@
     {
         "Name":"Tauren",
         "Unit":"Tauren",
+        "IconUri": "",
         "Faction":"Horde",
         "AvailableClasses":[
             "Druid",
@@ -73,6 +79,7 @@
     {
         "Name":"Trolls",
         "Unit":"Troll",
+        "IconUri": "",
         "Faction":"Horde",
         "AvailableClasses":[
             "Hunter",
@@ -86,6 +93,7 @@
     {
         "Name":"Undead",
         "Unit":"Undead",
+        "IconUri": "",
         "Faction":"Horde",
         "AvailableClasses":[
             "Mage",

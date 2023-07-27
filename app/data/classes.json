@@ -1,74 +1,191 @@
 [
     {
         "Name":"Druid",
+        "IconUri": "",
         "Specializations":[
-            "Balance",
-            "Guardian",
-            "Restoration"
+            {
+                "Name": "Balance",
+                "ClassName": "Druid",
+                "IconUri": ""
+            },
+            {
+                "Name": "Guardian",
+                "ClassName": "Druid",
+                "IconUri": ""
+            },
+            {
+                "Name": "Restoration",
+                "ClassName": "Druid",
+                "IconUri": ""
+            }
         ]
     },
     {
         "Name":"Hunter",
+        "IconUri": "",
         "Specializations":[
-            "Beastmastery",
-            "Marksmanship",
-            "Survival"
+            {
+                "Name": "Beastmastery",
+                "ClassName": "Hunter",
+                "IconUri": ""
+            },
+            {
+                "Name": "Marksmanship",
+                "ClassName": "Hunter",
+                "IconUri": ""
+            },
+            {
+                "Name": "Survival",
+                "ClassName": "Hunter",
+                "IconUri": ""
+            }
         ]
     },
     {
         "Name":"Mage",
+        "IconUri": "",
         "Specializations":[
-            "Arcane",
-            "Fire",
-            "Ice"
+            {
+                "Name": "Arcane",
+                "ClassName": "Mage",
+                "IconUri": ""
+            },
+            {
+                "Name": "Fire",
+                "ClassName": "Mage",
+                "IconUri": ""
+            },
+            {
+                "Name": "Ice",
+                "ClassName": "Mage",
+                "IconUri": ""
+            }
         ]
     },
     {
         "Name":"Paladin",
+        "IconUri": "",
         "Specializations":[
-            "Holy",
-            "Protection",
-            "Retribution"
+            {
+                "Name": "Holy",
+                "ClassName": "Paladin",
+                "IconUri": ""
+            },
+            {
+                "Name": "Protection",
+                "ClassName": "Paladin",
+                "IconUri": ""
+            },
+            {
+                "Name": "Retribution",
+                "ClassName": "Paladin",
+                "IconUri": ""
+            }
         ]
     },
     {
         "Name":"Priest",
+        "IconUri": "",
         "Specializations":[
-            "Discipline",
-            "Holy",
-            "Shadow"
+            {
+                "Name": "Discipline",
+                "ClassName": "Priest",
+                "IconUri": ""
+            },
+            {
+                "Name": "Holy",
+                "ClassName": "Priest",
+                "IconUri": ""
+            },
+            {
+                "Name": "Shadow",
+                "ClassName": "Priest",
+                "IconUri": ""
+            }
         ]
     },
     {
         "Name":"Rogue",
+        "IconUri": "",
         "Specializations":[
-            "Assassination",
-            "Combat",
-            "Subtlety"
+            {
+                "Name": "Assassination",
+                "ClassName": "Rogue",
+                "IconUri": ""
+            },
+            {
+                "Name": "Combat",
+                "ClassName": "Rogue",
+                "IconUri": ""
+            },
+            {
+                "Name": "Subtlety",
+                "ClassName": "Rogue",
+                "IconUri": ""
+            }
         ]
     },
     {
         "Name":"Shaman",
+        "IconUri": "",
         "Specializations":[
-            "Elemental",
-            "Enhancement",
-            "Restoration"
+            {
+                "Name": "Elemental",
+                "ClassName": "Shaman",
+                "IconUri": ""
+            },
+            {
+                "Name": "Enhancement",
+                "ClassName": "Shaman",
+                "IconUri": ""
+            },
+            {
+                "Name": "Restoration",
+                "ClassName": "Shaman",
+                "IconUri": ""
+            }
         ]
     },
     {
         "Name":"Warlock",
+        "IconUri": "",
         "Specializations":[
-            "Affliction",
-            "Demonology",
-            "Destruction"
+            {
+                "Name": "Affliction",
+                "ClassName": "Warlock",
+                "IconUri": ""
+            },
+            {
+                "Name": "Demonology",
+                "ClassName": "Warlock",
+                "IconUri": ""
+            },
+            {
+                "Name": "Destruction",
+                "ClassName": "Warlock",
+                "IconUri": ""
+            }
         ]
     },
     {
         "Name":"Warrior",
+        "IconUri": "",
         "Specializations":[
-            "Arms",
-            "Fury",
-            "Protection"
+            {
+                "Name": "Arms",
+                "ClassName": "Warrior",
+                "IconUri": ""
+            },
+            {
+                "Name": "Fury",
+                "ClassName": "Warrior",
+                "IconUri": ""
+            },
+            {
+                "Name": "Protection",
+                "ClassName": "Warrior",
+                "IconUri": ""
+            }
         ]
     }
 ]
