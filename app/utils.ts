@@ -133,7 +133,7 @@ export class WoWCharacter {
         }
 
         if (descriptionParts.length > 1 && this.Name) {
-            descriptionParts.splice(1, 0, ', a');
+            descriptionParts[0] = descriptionParts[0] + ', a';
         }
 
         return descriptionParts.join(' ');
