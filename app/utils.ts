@@ -1,18 +1,9 @@
 import type { WoWGender, WoWRace, WoWFaction, WoWClass, WoWClassSpecialization } from "./types";
 
 // Read Data
-import gendersData from './data/genders.json';
 import factionsData from './data/factions.json';
 import classesData from './data/classes.json';
 import racesData from './data/races.json';
-
-export const wowGenders: WoWGender[] = gendersData.map((item) => {
-    const wowGender: WoWGender = {
-        Name: item.Name,
-        IconUri: item.IconUri
-    }
-    return (wowGender)
-})
 
 export const wowFactions: WoWFaction[] = factionsData.map((item) => {
     const wowFaction: WoWFaction = {
@@ -40,6 +31,7 @@ export const wowClasses: WoWClass[] = classesData.map((item) => {
 })
 
 export const wowRaces: WoWRace[] = racesData.map((item) => {
+    const availableGenders: WoWGender[] = item.AvailableGenders;
     const faction: WoWFaction | undefined = wowFactions.find(faction => faction.Name === item.Faction);
     const availableClasses: WoWClass[] = item.AvailableClasses.map((classItem) => {
         return wowClasses.find(wowClass => wowClass.Name === classItem)
@@ -49,6 +41,7 @@ export const wowRaces: WoWRace[] = racesData.map((item) => {
         Unit: item.Unit,
         IconUri: item.IconUri,
         Faction: faction,
+        AvailableGenders: availableGenders,
         AvailableClasses: availableClasses
     }
     return (wowRace)
@@ -62,10 +55,10 @@ export class WoWCharacter {
     Class?: WoWClass;
     Specialization?: WoWClassSpecialization;
 
-    constructor(name: string, gender?: WoWGender, race?: WoWRace, charClass?: WoWClass, specialization?: WoWClassSpecialization) {
+    constructor(name: string, race?: WoWRace, gender?: WoWGender, charClass?: WoWClass, specialization?: WoWClassSpecialization) {
         this.Name = name;
-        this.Gender = gender;
         this.Race = race;
+        this.Gender = gender;
         this.Class = charClass;
         this.Specialization = specialization;
     }
@@ -75,15 +68,15 @@ export class WoWCharacter {
         return this.Name;
     }
 
-    getGender(): WoWGender | undefined {
-        return this.Gender;
-    }
-
     getRace(): WoWRace | undefined {
         return this.Race;
     }
 
-    getClass (): WoWClass | undefined {
+    getGender(): WoWGender | undefined {
+        return this.Gender;
+    }
+
+    getClass(): WoWClass | undefined {
         return this.Class;
     }
 
@@ -119,21 +112,37 @@ export class WoWCharacter {
         if (this.Name) {
             descriptionParts.push(this.Name);
         }
-        if (this.Gender && this.Gender.Name) {
-            descriptionParts.push(this.Gender.Name);
-        }
-        if (this.Race && this.Race.Unit) {
-            descriptionParts.push(this.Race.Unit);
+        if (this.Gender && this.Gender.IconUri) {
+            let altText = this.Gender.Name
+            if (this.Race && this.Race.Unit) {
+                altText += " " + this.Race.Unit
+            }
+            descriptionParts.push(`<img src="${this.Gender.IconUri}" alt="${altText}">`);
+        } else {
+            if (this.Gender && this.Gender.Name) {
+                descriptionParts.push(this.Gender.Name);
+            }
+            if (this.Race && this.Race.Unit) {
+                descriptionParts.push(this.Race.Unit);
+            }
         }
         if (this.Specialization && this.Specialization.Name) {
-            descriptionParts.push(this.Specialization.Name);
+            if (this.Specialization.IconUri) {
+                descriptionParts.push(`<img src="${this.Specialization.IconUri}" alt="${this.Specialization.Name}">`);
+            } else {
+                descriptionParts.push(this.Specialization.Name);
+            }
         }
         if (this.Class && this.Class.Name) {
-            descriptionParts.push(this.Class.Name);
+            if (this.Class.IconUri) {
+                descriptionParts.push(`<img src="${this.Class.IconUri}" alt="${this.Class.Name}">`);
+            } else {
+                descriptionParts.push(this.Class.Name);
+            }
         }
 
         if (descriptionParts.length > 1 && this.Name) {
-            descriptionParts[0] = descriptionParts[0] + ', a';
+            descriptionParts[0] = descriptionParts[0] + '<br />';
         }
 
         return descriptionParts.join(' ');
@@ -147,25 +156,29 @@ function getRandomItem<T>(items: T[]): T {
 }
 
 // Generator Functions
-export function getRandomWoWGender(): WoWGender {
-    return getRandomItem(wowGenders);
-}
-
 export function getRandomWoWRace(): WoWRace {
     return getRandomItem(wowRaces);
 }
 
+export function getRandomWoWGender(race: WoWRace): WoWGender | undefined {
+    if (race.AvailableGenders !== undefined) {
+        return getRandomItem(race.AvailableGenders);
+    } else {
+        return undefined;
+    }
+}
+
 export function getRandomWoWClass(race: WoWRace): WoWClass | undefined {
-    if(race.AvailableClasses !== undefined){
+    if (race.AvailableClasses !== undefined) {
         return getRandomItem(race.AvailableClasses);
     } else {
         return undefined;
     }
-    
+
 }
 
 export function getRandomWoWClassSpecialization(wowClass?: WoWClass): WoWClassSpecialization | undefined {
-    if(wowClass !== undefined){
+    if (wowClass !== undefined) {
         return getRandomItem(wowClass.Specializations);
     } else {
         return undefined;
@@ -173,12 +186,12 @@ export function getRandomWoWClassSpecialization(wowClass?: WoWClass): WoWClassSp
 }
 
 export function getRandomWoWCharacter(name: string): WoWCharacter {
-    const charGender = getRandomWoWGender();
     const charRace = getRandomWoWRace();
+    const charGender = getRandomWoWGender(charRace);
     const charClass = getRandomWoWClass(charRace);
     const charSpec = getRandomWoWClassSpecialization(charClass);
 
-    const newChar = new WoWCharacter(name,charGender,charRace,charClass,charSpec);
+    const newChar = new WoWCharacter(name, charRace, charGender, charClass, charSpec);
 
     return newChar;
 }

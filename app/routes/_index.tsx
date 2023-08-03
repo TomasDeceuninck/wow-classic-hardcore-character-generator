@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import type { WoWCharacter} from '../utils';
+import type { WoWCharacter } from '../utils';
 import { getRandomWoWCharacter } from '../utils';
 import type { V2_MetaFunction } from '@remix-run/node';
 //import RacesAndClasses from '../components/RacesAndClasses';
@@ -25,7 +25,7 @@ export default function Index() {
       {randomCharacter && (
         <React.Fragment>
           <h2>Generated character</h2>
-          <p>{randomCharacter.getDescription()}</p>
+          <div dangerouslySetInnerHTML={{ __html: randomCharacter.getDescription() }}></div>
           {/* <RacesAndClasses /> */}
         </React.Fragment>
       )}

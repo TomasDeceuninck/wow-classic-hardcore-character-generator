@@ -1,8 +1,8 @@
 [
     {
-        "Name":"Druid",
-        "IconUri": "",
-        "Specializations":[
+        "Name": "Druid",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg",
+        "Specializations": [
             {
                 "Name": "Balance",
                 "ClassName": "Druid",
@@ -21,9 +21,9 @@
         ]
     },
     {
-        "Name":"Hunter",
-        "IconUri": "",
-        "Specializations":[
+        "Name": "Hunter",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg",
+        "Specializations": [
             {
                 "Name": "Beastmastery",
                 "ClassName": "Hunter",
@@ -42,9 +42,9 @@
         ]
     },
     {
-        "Name":"Mage",
-        "IconUri": "",
-        "Specializations":[
+        "Name": "Mage",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg",
+        "Specializations": [
             {
                 "Name": "Arcane",
                 "ClassName": "Mage",
@@ -63,9 +63,9 @@
         ]
     },
     {
-        "Name":"Paladin",
-        "IconUri": "",
-        "Specializations":[
+        "Name": "Paladin",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg",
+        "Specializations": [
             {
                 "Name": "Holy",
                 "ClassName": "Paladin",
@@ -84,9 +84,9 @@
         ]
     },
     {
-        "Name":"Priest",
-        "IconUri": "",
-        "Specializations":[
+        "Name": "Priest",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg",
+        "Specializations": [
             {
                 "Name": "Discipline",
                 "ClassName": "Priest",
@@ -105,9 +105,9 @@
         ]
     },
     {
-        "Name":"Rogue",
-        "IconUri": "",
-        "Specializations":[
+        "Name": "Rogue",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg",
+        "Specializations": [
             {
                 "Name": "Assassination",
                 "ClassName": "Rogue",
@@ -126,9 +126,9 @@
         ]
     },
     {
-        "Name":"Shaman",
-        "IconUri": "",
-        "Specializations":[
+        "Name": "Shaman",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg",
+        "Specializations": [
             {
                 "Name": "Elemental",
                 "ClassName": "Shaman",
@@ -147,44 +147,44 @@
         ]
     },
     {
-        "Name":"Warlock",
-        "IconUri": "",
-        "Specializations":[
+        "Name": "Warlock",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg",
+        "Specializations": [
             {
                 "Name": "Affliction",
                 "ClassName": "Warlock",
-                "IconUri": ""
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_deathcoil.jpg"
             },
             {
                 "Name": "Demonology",
                 "ClassName": "Warlock",
-                "IconUri": ""
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_metamorphosis.jpg"
             },
             {
                 "Name": "Destruction",
                 "ClassName": "Warlock",
-                "IconUri": ""
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_rainoffire.jpg"
             }
         ]
     },
     {
-        "Name":"Warrior",
-        "IconUri": "",
-        "Specializations":[
+        "Name": "Warrior",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg",
+        "Specializations": [
             {
                 "Name": "Arms",
                 "ClassName": "Warrior",
-                "IconUri": ""
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_savageblow.jpg"
             },
             {
                 "Name": "Fury",
                 "ClassName": "Warrior",
-                "IconUri": ""
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_innerrage.jpg"
             },
             {
                 "Name": "Protection",
                 "ClassName": "Warrior",
-                "IconUri": ""
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/inv_shield_06.jpg"
             }
         ]
     }
