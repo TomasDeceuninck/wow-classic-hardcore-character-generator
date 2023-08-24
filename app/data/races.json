@@ -1,9 +1,20 @@
 [
     {
-        "Name":"Dwarves",
-        "Unit":"Dwarf",
-        "Faction":"Alliance",
-        "AvailableClasses":[
+        "Name": "Dwarves",
+        "Unit": "Dwarf",
+        "IconUri": "",
+        "Faction": "Alliance",
+        "AvailableGenders": [
+            {
+                "Name": "Male",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_dwarf_male.jpg"
+            },
+            {
+                "Name": "Female",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_dwarf_female.jpg"
+            }
+        ],
+        "AvailableClasses": [
             "Hunter",
             "Paladin",
             "Priest",
@@ -12,10 +23,21 @@
         ]
     },
     {
-        "Name":"Gnomes",
-        "Unit":"Gnome",
-        "Faction":"Alliance",
-        "AvailableClasses":[
+        "Name": "Gnomes",
+        "Unit": "Gnome",
+        "IconUri": "",
+        "Faction": "Alliance",
+        "AvailableGenders": [
+            {
+                "Name": "Male",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_gnome_male.jpg"
+            },
+            {
+                "Name": "Female",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_gnome_female.jpg"
+            }
+        ],
+        "AvailableClasses": [
             "Mage",
             "Rogue",
             "Warlock",
@@ -23,10 +45,21 @@
         ]
     },
     {
-        "Name":"Humans",
-        "Unit":"Human",
-        "Faction":"Alliance",
-        "AvailableClasses":[
+        "Name": "Humans",
+        "Unit": "Human",
+        "IconUri": "",
+        "Faction": "Alliance",
+        "AvailableGenders": [
+            {
+                "Name": "Male",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_human_male.jpg"
+            },
+            {
+                "Name": "Female",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_human_female.jpg"
+            }
+        ],
+        "AvailableClasses": [
             "Mage",
             "Paladin",
             "Priest",
@@ -36,10 +69,21 @@
         ]
     },
     {
-        "Name":"Night Elves",
-        "Unit":"Night Elf",
-        "Faction":"Alliance",
-        "AvailableClasses":[
+        "Name": "Night Elves",
+        "Unit": "Night Elf",
+        "IconUri": "",
+        "Faction": "Alliance",
+        "AvailableGenders": [
+            {
+                "Name": "Male",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_nightelf_male.jpg"
+            },
+            {
+                "Name": "Female",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_nightelf_female.jpg"
+            }
+        ],
+        "AvailableClasses": [
             "Druid",
             "Hunter",
             "Priest",
@@ -48,10 +92,21 @@
         ]
     },
     {
-        "Name":"Orcs",
-        "Unit":"Orc",
-        "Faction":"Horde",
-        "AvailableClasses":[
+        "Name": "Orcs",
+        "Unit": "Orc",
+        "IconUri": "",
+        "Faction": "Horde",
+        "AvailableGenders": [
+            {
+                "Name": "Male",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_orc_male.jpg"
+            },
+            {
+                "Name": "Female",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_orc_female.jpg"
+            }
+        ],
+        "AvailableClasses": [
             "Hunter",
             "Rogue",
             "Shaman",
@@ -60,10 +115,21 @@
         ]
     },
     {
-        "Name":"Tauren",
-        "Unit":"Tauren",
-        "Faction":"Horde",
-        "AvailableClasses":[
+        "Name": "Tauren",
+        "Unit": "Tauren",
+        "IconUri": "",
+        "Faction": "Horde",
+        "AvailableGenders": [
+            {
+                "Name": "Male",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_tauren_male.jpg"
+            },
+            {
+                "Name": "Female",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_tauren_female.jpg"
+            }
+        ],
+        "AvailableClasses": [
             "Druid",
             "Hunter",
             "Shaman",
@@ -71,10 +137,21 @@
         ]
     },
     {
-        "Name":"Trolls",
-        "Unit":"Troll",
-        "Faction":"Horde",
-        "AvailableClasses":[
+        "Name": "Trolls",
+        "Unit": "Troll",
+        "IconUri": "",
+        "Faction": "Horde",
+        "AvailableGenders": [
+            {
+                "Name": "Male",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_trol_male.jpg"
+            },
+            {
+                "Name": "Female",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_trol_female.jpg"
+            }
+        ],
+        "AvailableClasses": [
             "Hunter",
             "Mage",
             "Priest",
@@ -84,10 +161,21 @@
         ]
     },
     {
-        "Name":"Undead",
-        "Unit":"Undead",
-        "Faction":"Horde",
-        "AvailableClasses":[
+        "Name": "Undead",
+        "Unit": "Undead",
+        "IconUri": "",
+        "Faction": "Horde",
+        "AvailableGenders": [
+            {
+                "Name": "Male",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_undead_male.jpg"
+            },
+            {
+                "Name": "Female",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/race_undead_female.jpg"
+            }
+        ],
+        "AvailableClasses": [
             "Mage",
             "Priest",
             "Rogue",

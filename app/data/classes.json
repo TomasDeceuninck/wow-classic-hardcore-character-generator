@@ -1,74 +1,191 @@
 [
     {
-        "Name":"Druid",
-        "Specializations":[
-            "Balance",
-            "Guardian",
-            "Restoration"
+        "Name": "Druid",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg",
+        "Specializations": [
+            {
+                "Name": "Balance",
+                "ClassName": "Druid",
+                "IconUri": ""
+            },
+            {
+                "Name": "Guardian",
+                "ClassName": "Druid",
+                "IconUri": ""
+            },
+            {
+                "Name": "Restoration",
+                "ClassName": "Druid",
+                "IconUri": ""
+            }
         ]
     },
     {
-        "Name":"Hunter",
-        "Specializations":[
-            "Beastmastery",
-            "Marksmanship",
-            "Survival"
+        "Name": "Hunter",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg",
+        "Specializations": [
+            {
+                "Name": "Beastmastery",
+                "ClassName": "Hunter",
+                "IconUri": ""
+            },
+            {
+                "Name": "Marksmanship",
+                "ClassName": "Hunter",
+                "IconUri": ""
+            },
+            {
+                "Name": "Survival",
+                "ClassName": "Hunter",
+                "IconUri": ""
+            }
         ]
     },
     {
-        "Name":"Mage",
-        "Specializations":[
-            "Arcane",
-            "Fire",
-            "Ice"
+        "Name": "Mage",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg",
+        "Specializations": [
+            {
+                "Name": "Arcane",
+                "ClassName": "Mage",
+                "IconUri": ""
+            },
+            {
+                "Name": "Fire",
+                "ClassName": "Mage",
+                "IconUri": ""
+            },
+            {
+                "Name": "Ice",
+                "ClassName": "Mage",
+                "IconUri": ""
+            }
         ]
     },
     {
-        "Name":"Paladin",
-        "Specializations":[
-            "Holy",
-            "Protection",
-            "Retribution"
+        "Name": "Paladin",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg",
+        "Specializations": [
+            {
+                "Name": "Holy",
+                "ClassName": "Paladin",
+                "IconUri": ""
+            },
+            {
+                "Name": "Protection",
+                "ClassName": "Paladin",
+                "IconUri": ""
+            },
+            {
+                "Name": "Retribution",
+                "ClassName": "Paladin",
+                "IconUri": ""
+            }
         ]
     },
     {
-        "Name":"Priest",
-        "Specializations":[
-            "Discipline",
-            "Holy",
-            "Shadow"
+        "Name": "Priest",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg",
+        "Specializations": [
+            {
+                "Name": "Discipline",
+                "ClassName": "Priest",
+                "IconUri": ""
+            },
+            {
+                "Name": "Holy",
+                "ClassName": "Priest",
+                "IconUri": ""
+            },
+            {
+                "Name": "Shadow",
+                "ClassName": "Priest",
+                "IconUri": ""
+            }
         ]
     },
     {
-        "Name":"Rogue",
-        "Specializations":[
-            "Assassination",
-            "Combat",
-            "Subtlety"
+        "Name": "Rogue",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg",
+        "Specializations": [
+            {
+                "Name": "Assassination",
+                "ClassName": "Rogue",
+                "IconUri": ""
+            },
+            {
+                "Name": "Combat",
+                "ClassName": "Rogue",
+                "IconUri": ""
+            },
+            {
+                "Name": "Subtlety",
+                "ClassName": "Rogue",
+                "IconUri": ""
+            }
         ]
     },
     {
-        "Name":"Shaman",
-        "Specializations":[
-            "Elemental",
-            "Enhancement",
-            "Restoration"
+        "Name": "Shaman",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg",
+        "Specializations": [
+            {
+                "Name": "Elemental",
+                "ClassName": "Shaman",
+                "IconUri": ""
+            },
+            {
+                "Name": "Enhancement",
+                "ClassName": "Shaman",
+                "IconUri": ""
+            },
+            {
+                "Name": "Restoration",
+                "ClassName": "Shaman",
+                "IconUri": ""
+            }
         ]
     },
     {
-        "Name":"Warlock",
-        "Specializations":[
-            "Affliction",
-            "Demonology",
-            "Destruction"
+        "Name": "Warlock",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg",
+        "Specializations": [
+            {
+                "Name": "Affliction",
+                "ClassName": "Warlock",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_deathcoil.jpg"
+            },
+            {
+                "Name": "Demonology",
+                "ClassName": "Warlock",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_metamorphosis.jpg"
+            },
+            {
+                "Name": "Destruction",
+                "ClassName": "Warlock",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/spell_shadow_rainoffire.jpg"
+            }
         ]
     },
     {
-        "Name":"Warrior",
-        "Specializations":[
-            "Arms",
-            "Fury",
-            "Protection"
+        "Name": "Warrior",
+        "IconUri": "https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg",
+        "Specializations": [
+            {
+                "Name": "Arms",
+                "ClassName": "Warrior",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_savageblow.jpg"
+            },
+            {
+                "Name": "Fury",
+                "ClassName": "Warrior",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/ability_warrior_innerrage.jpg"
+            },
+            {
+                "Name": "Protection",
+                "ClassName": "Warrior",
+                "IconUri": "https://wow.zamimg.com/images/wow/icons/large/inv_shield_06.jpg"
+            }
         ]
     }
 ]
