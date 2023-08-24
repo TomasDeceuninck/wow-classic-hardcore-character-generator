@@ -13,6 +13,10 @@ export const wowFactions: WoWFaction[] = factionsData.map((item) => {
     return (wowFaction)
 })
 
+export function getWoWFaction(wowFactionName: string): WoWFaction | undefined {
+    return wowFactions.find(wowFaction => wowFaction.Name === wowFactionName);
+}
+
 export const wowClasses: WoWClass[] = classesData.map((item) => {
     const wowClassSpecializations: WoWClassSpecialization[] = item.Specializations.map((specItem) => {
         const wowClassSpecialization: WoWClassSpecialization = {
@@ -30,6 +34,13 @@ export const wowClasses: WoWClass[] = classesData.map((item) => {
     return (wowClass)
 })
 
+export function getWoWClass(wowClassName: string): WoWClass | undefined {
+    return wowClasses.find(wowClass => wowClass.Name === wowClassName);
+}
+export function getWoWClassSpecialization(wowClassSpecializationName: string, wowClass: WoWClass): WoWClassSpecialization | undefined {
+    return wowClass.Specializations.find(wowClassSpecialization => wowClassSpecialization.Name === wowClassSpecializationName);
+}
+
 export const wowRaces: WoWRace[] = racesData.map((item) => {
     const availableGenders: WoWGender[] = item.AvailableGenders;
     const faction: WoWFaction | undefined = wowFactions.find(faction => faction.Name === item.Faction);
@@ -46,6 +57,13 @@ export const wowRaces: WoWRace[] = racesData.map((item) => {
     }
     return (wowRace)
 })
+
+export function getWoWRace(wowRaceName: string): WoWRace | undefined {
+    return wowRaces.find(wowRace => wowRace.Name === wowRaceName);
+}
+export function getWoWGender(wowGenderName: string, wowRace: WoWRace ): WoWGender | undefined {
+    return wowRace.AvailableGenders?.find(wowGender => wowGender.Name === wowGenderName);
+}
 
 // Character definitions
 export class WoWCharacter {
@@ -195,3 +213,29 @@ export function getRandomWoWCharacter(name: string): WoWCharacter {
 
     return newChar;
 }
+
+// New Random Generators
+export function getRandomRace(): string {
+    const race = getRandomItem(wowRaces);
+    return race.Name;
+  }
+  
+  export function getRandomClass(): string {
+    // Flatten out classes into a single array
+    const simplifiedClasses = wowClasses.map(wowClass => wowClass.Name);
+    const charClass = getRandomItem(simplifiedClasses);
+    return charClass;
+  }
+  
+  export function getRandomGender(): string {
+    // Gather all available genders into a single array
+    const allGenders: WoWGender[] = [];
+    wowRaces.forEach(race => {
+      if (race.AvailableGenders) {
+        allGenders.push(...race.AvailableGenders);
+      }
+    });
+    const uniqueGenders = [...new Set(allGenders)]; // remove duplicates
+    const gender = getRandomItem(uniqueGenders);
+    return gender.Name;
+  }

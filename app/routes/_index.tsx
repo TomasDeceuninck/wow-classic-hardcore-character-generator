@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import type { WoWCharacter } from '../utils';
-import { getRandomWoWCharacter } from '../utils';
+import React from 'react';
 import type { V2_MetaFunction } from '@remix-run/node';
-//import RacesAndClasses from '../components/RacesAndClasses';
+import { Link } from '@remix-run/react';
+import { getRandomWoWCharacter } from '../utils';
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -11,27 +10,25 @@ export const meta: V2_MetaFunction = () => {
   ];
 };
 
+const generateCharacterUrl = () => {
+  const randomWoWCharacter = getRandomWoWCharacter('somename');
+  const name = randomWoWCharacter.Name;
+  const raceid = randomWoWCharacter.Race?.Name;
+  const genderid = randomWoWCharacter.Gender?.Name;
+  const classid = randomWoWCharacter.Class?.Name;
+  const specid = randomWoWCharacter.Specialization?.Name;
+
+  // Construct URL
+  return `/character/name/${name}/race/${raceid}/gender/${genderid}/class/${classid}/spec/${specid}`;
+};
+
 export default function Index() {
-  const [randomCharacter, setRandomCharacter] = useState<WoWCharacter | null>(null);
-
-  useEffect(() => {
-    const character = getRandomWoWCharacter('some name');
-    setRandomCharacter(character);
-  }, []);
-
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.8' }}>
       <h1>WoW Classic Character Generator</h1>
-      {randomCharacter && (
-        <React.Fragment>
-          <h2>Generated character</h2>
-          <div dangerouslySetInnerHTML={{ __html: randomCharacter.getDescription() }}></div>
-          {/* <RacesAndClasses /> */}
-        </React.Fragment>
-      )}
-      <a target="_blank" href="https://wowclassic.blizzard.com/en-us/" rel="noreferrer">
-        World of Warcraft Classic
-      </a>
+      <Link to={generateCharacterUrl()}>
+        <button>Generate Character</button>
+      </Link>
     </div>
   );
 }
